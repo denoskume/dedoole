@@ -5,13 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const refreshButton = document.querySelector(".fa-sync-alt");
 
     // Load home.html by default
-    loadPage("html/home");
+    loadPage("html/home.html");
 
     links.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
-            const page = this.getAttribute("href").substring(1);
+            const page = this.getAttribute("href");
             loadPage(page);
+            smoothScrollTo(mainContent);
         });
     });
 
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function loadPage(page) {
-        fetch(`${page}.html`)
+        fetch(page)
             .then(response => response.text())
             .then(data => {
                 mainContent.innerHTML = data;
@@ -33,5 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.error("Error loading page:", error);
                 mainContent.innerHTML = "<p>Sorry, there was an error loading the page.</p>";
             });
+    }
+
+    function smoothScrollTo(element) {
+        window.scrollTo({
+            top: element.offsetTop,
+            behavior: "smooth"
+        });
     }
 });
