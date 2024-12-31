@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll(".nav-link");
     const mainContent = document.querySelector("main");
+    const backButton = document.querySelector(".fa-arrow-left");
+    const refreshButton = document.querySelector(".fa-sync-alt");
 
     // Load home.html by default
     loadPage("home");
@@ -11,6 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const page = this.getAttribute("href").substring(1);
             loadPage(page);
         });
+    });
+
+    backButton.addEventListener("click", function() {
+        window.history.back();
+    });
+
+    refreshButton.addEventListener("click", function() {
+        location.reload();
     });
 
     function loadPage(page) {
@@ -25,4 +35,3 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 });
-
