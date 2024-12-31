@@ -1,0 +1,162 @@
+
+<section id="cv"> 
+    <!-- Contact Information and Profile Sections (Top) -->
+    <div class="section top-section bg-light">
+        <div class="container">
+            <!-- Contact Information and Profile in the same div -->
+            <div class="group-top">
+                <!-- Contact Information Section -->
+                <div class="contact-info mb-4">
+                    <h2 class="text-center">Contact Information</h2>
+                    <p class="text-center">
+                        <strong>Name:</strong> Denos Kume<br>
+                        <strong>Address:</strong> 10TH Cross, Balaji Krupa Layout, Bangalore – 560077, India <br>
+                        <strong>Phone:</strong> (+91) 810 5687 851<br>
+                        <strong>Email:</strong> <a href="mailto:denoskume77@gmail.com">denoskume77@gmail.com</a><br>
+                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/denos-kume" target="_blank">https://www.linkedin.com/in/denos-kume</a>
+                    </p>
+                </div>
+                <hr>
+                <!-- Profile Section -->
+                <div class="profile">
+                    <h2 class="text-center">Profile</h2>
+                    <p class="text-center">
+                        Dynamic Junior Data Analyst with a strong foundation in computer science and electronics. Passionate 
+                        about leveraging data-driven insights to solve complex problems and enhance communication systems. 
+                        Proven ability to collaborate effectively with cross-functional teams to deliver impactful solutions. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section middle-section">
+        <div class="container">
+            <div class="row">
+                <!-- Left Sections (70%) -->
+                <div class="col-md-8">
+                    <div class="group-middle">
+                        <!-- Education Section -->
+                        <div class="education mb-4">
+                            <h2 class="text-left">Education</h2>
+                            <ul>
+                                <li><strong>Bachelor of Science</strong>, Kristu Jayanti College - 2024</li>
+                                <li><strong>Baccalaurat -Serie D</strong>, Lycee Moderne M'Batto - 2020</li>
+                                <!-- Add more as needed -->
+                            </ul>
+                        </div>
+                        <hr>
+                        <!-- Professional Experience Section -->
+                        <div class="experience mb-4">
+                            <h2 class="text-left">Professional Experience</h2>
+                            <ul>
+                                <li><strong>Data Analyst</strong>, Unified Mentor - Sep 2024 - Present
+                                    <ul>
+                                        <li>Assisted in data analysis and dashboard creation.</li>
+                                        <li>Collaborated with teams to identify actionable insights.</li>
+                                        </li>Implemented data cleaning and preprocessing protocols.</li>
+                                        <!-- Add more as needed -->
+                                    </ul>
+                                </li>
+                                <!-- Add more jobs as needed -->
+                            </ul>
+                        </div>
+                        <hr>
+                        <!-- Projects Section -->
+                        <div class="projects mb-4">
+                            <h2 class="text-left">Projects</h2>
+                            <ul>
+                                <li><strong>Wireless Communication System Design</strong>
+                                    <ul>
+                                        <li>Designed and optimized a wireless communication system.</li>
+                                        <li>Arduino Uno, ESP32</li>
+                                        <!-- Add more as needed -->
+                                    </ul>
+                                </li>
+                                <!-- Add more projects as needed -->
+                            </ul>
+                        </div>
+                        <hr>
+                        <!-- Extracurricular Activities Section -->
+                        <div class="extracurricular">
+                            <h2 class="text-left">Extracurricular Activities</h2>
+                            <ul>
+                                <li><strong>[Activity Name]</strong>, [Organization] - [Year]</li>
+                                <li><strong>[Activity Name]</strong>, [Organization] - [Year]</li>
+                                <!-- Add more as needed -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Sections (30%) -->
+                <div class="col-md-4">
+                    <div class="group-right">
+                        <!-- Skills Section -->
+                        <div class="skills mb-4">
+                            <h2 class="text-left">Skills</h2>
+                            <ul>
+                                <li><strong>Programming: </strong>Python, Java, SQL, R </li>
+                                <li><strong>Data Analysis: </strong> Excel, Tableau, Power Bi</li>
+                                <li><srong>Database Management: </srong> MySQL, PostgreSQL, MangoDB</li>
+                                <!-- Add more as needed -->
+                            </ul>
+                        </div>
+                        <hr>
+                        <!-- Certifications Section -->
+                        <div class="certifications mb-4">
+                            <h2 class="text-left">Certifications</h2>
+                            <ul>
+                                <li><strong>Data Analyst Certificate</strong>, Google - Sep 2024</li>
+                                <li><strong>Statistic Essential for DS</strong>, Simplilearn - Nov 2024</li>
+                                <!-- Add more as needed -->
+                            </ul>
+                        </div>
+                        <hr>
+                        <!-- Professional Affiliations Section -->
+                        <div class="affiliations mb-4">
+                            <h2 class="text-left">Professional Affiliations</h2>
+                            <ul>
+                                <li><strong>IEEE</strong> - Member, 2024</li>
+                                <li><strong>AIB</strong> - Secretary, 2022</li>
+                                <!-- Add more as needed -->
+                            </ul>
+                        </div>
+                        <hr>
+                        <!-- Interests Section -->
+                        <div class="interests">
+                            <h2 class="text-left">Interests</h2>
+                            <p class="text-left">Electrical Engineering</p>
+                            <p class="text-left">Communication Systems</p>
+                            <p class="text-left">Data Analysis</p>
+                            <p class="text-left">Machine Learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Download Resume as PDF
+        document.getElementById('download-btn').addEventListener('click', function() {
+            const { jsPDF } = window.jspdf;
+
+            const doc = new jsPDF();
+            const content = document.getElementById('cv');
+
+            doc.html(content, {
+                callback: function (doc) {
+                    doc.save('resume.pdf');
+                },
+                x: 10,
+                y: 10
+            });
+        });
+    </script>
+
+    <!-- Print Button -->
+    <div class="print-button text-center my-4">
+    <button id="print-btn" class="btn btn-primary">Print Resume</button> 
+    </div>
+     
+</section>
