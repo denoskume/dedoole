@@ -307,4 +307,180 @@ h2 {
 /* End Experience Section style */   
 
 
+/* Start Resume/CV Style */
+.section {
+    padding: 0; /* Remove padding to eliminate gaps */
+    width: 100%;
+}
+
+.top-section {
+    max-width: 100%;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    
+}
+
+.middle-section {
+    border: 2px solid #ccc;
+    background-color: #fff;
+    margin-top: -1px; /* Ensure no gap between sections */
+}
+
+.group-top,
+.group-middle,
+.group-right {
+    padding: 20px 0; /* Remove padding to eliminate gaps */
+    border-radius: 0; /* Remove border radius to eliminate gaps */
+    background-color: #fff;
+}
+
+.group-top h2,
+.group-middle h2,
+.group-right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    background-color: #ced4da;
+}
+
+.group-top h2:hover, 
+.group-middle h2:hover, 
+.group-right h2:hover { 
+    color:#f8f9fa;
+}
+
+.group-top p,
+.group-middle ul,
+.group-right ul {
+    font-size: 16px;
+    color: #666;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 0; /* Remove margin to eliminate gaps */
+}
+
+@media (max-width: 768px) {
+    .middle-sections .col-md-8, .middle-sections .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Print Styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #cv, #cv * {
+        visibility: visible;
+    }
+
+    #cv {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 29.7cm; 
+        height: 42cm; 
+        padding: 5mm; /* Padding for print */
+        box-sizing: border-box;
+    }
+
+    .print-button {
+        display: none;
+    }
+
+    .group-top, .group-middle, .group-right {
+        page-break-inside: avoid; 
+    }
+
+
+.group-top h2, 
+.group-middle h2, 
+.group-right h2 { 
+    background-color: #ced4da; 
+  } 
+}
+
+/* End Resume/CV Style */
+
+
+/* Start Form Style */
+        
+        .form-container {
+            width:50%;
+            margin-left: 350px;
+            border-radius: 30px;
+            padding: 20px;
+            background-color: white;
+            align-items: center;
+            
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-clear {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            color: white;
+        }
+        .btn-clear:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+        .btn-send {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+        .btn-send:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+        .scrolling-text {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .scrolling-text p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 20s linear infinite;
+            background-color: #ced4da; /* Default background color */
+       }
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+        }
+         
+        @keyframes scroll {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+
+/* End Form Style */
+
+
+
 
