@@ -8,11 +8,6 @@ function loadContent(url) {
         .catch(error => console.error('Error loading content:', error));
 }
 
-// Load the correct page based on the URL
-window.onload = function() {
-    const currentPage = window.location.pathname.split("/").pop() || "html/home.html";
-    loadContent(currentPage);
-};
 
 // Add event listener to navigation links
 document.querySelectorAll('.nav-link').forEach(link => {
@@ -24,8 +19,3 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Handle browser back/forward buttons
-window.addEventListener("popstate", function() {
-    const page = window.location.pathname.split("/").pop() || "html/home.html";
-    loadContent(page);
-});
