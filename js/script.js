@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const refreshButton = document.querySelector(".fa-sync-alt");
 
     // Load home.html by default
-    loadPage("html/home.html");
+    loadPage("html/home");
 
     links.forEach(link => {
         link.addEventListener("click", function(event) {
