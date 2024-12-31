@@ -1,4 +1,4 @@
-        body {
+ body {
             display: flex;
             margin: 0;
             font-family: Arial, sans-serif;
@@ -55,6 +55,34 @@
         .header-bottom a {
             margin: 0 10px;
         }
+
+        .hbottom-nav {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .hbottom-nav a {
+
+            color: black; 
+            text-decoration: none; 
+            margin: 0 10px; 
+            font-weight: bold; 
+            background-color: white; 
+            padding: 10px 15px; 
+            border-radius: 50px; 
+            position: relative;
+            overflow: hidden;
+
+
+        }
+        
+        .hbottom-nav a:hover {
+            color: white;
+            background-color: lightgray; 
+            
+        }
+
         nav {
             position: fixed;
             top: 100px;
@@ -63,7 +91,7 @@
             height: calc(100% - 100px);
             background-color: white;
             color: white;
-            padding: 20px;
+            padding: 2px;
             box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
             overflow-y: auto;
             
@@ -82,22 +110,32 @@
 
         .nav-content { 
             margin-top: 80px; 
+            
         }
 
         nav a {
             color: black;
             text-decoration: none;
             display: block;
-            margin: 10px 0;
+            margin: 0 0 10px  ;
         }
-
 
         nav a img { 
-            margin-right: 10px; 
-            width: 20px; 
-            height: 20px; 
+            color: inherit;
+            margin-right: 15px; 
+            width: 45px; 
+            height: 45px; 
             object-fit: cover; 
+            border-radius: 50px;
+            border: 3px double grey;
+            background-color: lightgrey;
         }
+
+
+        nav a:hover, nav a img:hover {
+            background-color: lightgrey;
+        }
+
 
         main {
             
@@ -116,8 +154,8 @@
         }
         .hsmall-logo { 
             border-radius: 50%; 
-            width: 28px; 
-            height: 28px; 
+            width: 20px; 
+            height: 20px; 
             object-fit: cover; 
             margin-right: 20px;
             margin-left: 10px;
@@ -125,8 +163,8 @@
 
         .hmedium-logo { 
             border-radius: 50%; 
-            width: 58px; 
-            height: 58px; 
+            width: 40px; 
+            height: 40px; 
             object-fit: cover; 
             margin-right: 10px;
         } 
