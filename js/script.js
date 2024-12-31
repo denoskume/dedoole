@@ -4,14 +4,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const backButton = document.querySelector(".fa-arrow-left");
     const refreshButton = document.querySelector(".fa-sync-alt");
 
-    // Load home.html by default
-    loadPage("html/home.html");
+    // Load the correct page based on the URL
+    const currentPage = window.location.pathname.split("/").pop() || "html/home.html";
+    loadPage(currentPage);
 
     links.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
             const page = this.getAttribute("href");
             loadPage(page);
+            history.pushState(null, "", page);
             smoothScrollTo(mainContent);
         });
     });
@@ -22,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     refreshButton.addEventListener("click", function() {
         location.reload();
+    });
+
+    window.addEventListener("popstate", function() {
+        const page = window.location.pathname.split("/").pop() || "html/home.html";
+        loadPage(page);
     });
 
     function loadPage(page) {
