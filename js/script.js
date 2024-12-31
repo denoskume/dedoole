@@ -1,45 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll(".nav-link");
-    const mainContent = document.querySelector("main");
-    const backButton = document.querySelector(".fa-arrow-left");
-    const refreshButton = document.querySelector(".fa-sync-alt");
+// Function to load content dynamically
+function loadContent(url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('content').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading content:', error));
+}
 
-    // Load home.html by default
-    loadPage("html/home.html");
+// Load home.html content on page load
+window.onload = function() {
+    loadContent('html/home.html');
+};
 
-    links.forEach(link => {
-        link.addEventListener("click", function(event) {
-            event.preventDefault();
-            const page = this.getAttribute("href");
-            loadPage(page);
-            smoothScrollTo(mainContent);
-        });
+// Add event listener to navigation links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const url = this.getAttribute('href').substring(1) + '.html';
+        loadContent(url);
     });
-
-    backButton.addEventListener("click", function() {
-        window.history.back();
-    });
-
-    refreshButton.addEventListener("click", function() {
-        location.reload();
-    });
-
-    function loadPage(page) {
-        fetch(page)
-            .then(response => response.text())
-            .then(data => {
-                mainContent.innerHTML = data;
-            })
-            .catch(error => {
-                console.error("Error loading page:", error);
-                mainContent.innerHTML = "<p>Sorry, there was an error loading the page.</p>";
-            });
-    }
-
-    function smoothScrollTo(element) {
-        window.scrollTo({
-            top: element.offsetTop,
-            behavior: "smooth"
-        });
-    }
 });
