@@ -3,7 +3,7 @@ function loadContent(url) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            document.getElementById('content').innerHTML = data;
+            document.getElementById('main').innerHTML = data;
         })
         .catch(error => console.error('Error loading content:', error));
 }
@@ -17,7 +17,7 @@ window.onload = function() {
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
-        const url = this.getAttribute('href').substring(1) + '.html';
+        const url = this.getAttribute('href');
         loadContent(url);
     });
 });
