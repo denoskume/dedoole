@@ -45,6 +45,15 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+// Print Resume
+document.getElementById('content').addEventListener('click', function(event) {
+    if (event.target.id === 'print-btn') {
+        window.print();
+    }
+});
+
+
 // Experience section
 
  function toggleDescription(id) {
