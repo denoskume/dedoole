@@ -8,9 +8,10 @@ function loadContent(url) {
         .catch(error => console.error('Error loading content:', error));
 }
 
-// Load home.html content on page load
+// Load the correct page based on the URL
 window.onload = function() {
-    loadContent('html/home.html');
+    const currentPage = window.location.pathname.split("/").pop() || "html/home.html";
+    loadContent(currentPage);
 };
 
 // Add event listener to navigation links
@@ -19,5 +20,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
         event.preventDefault();
         const url = this.getAttribute('href');
         loadContent(url);
+        history.pushState(null, "", url);
     });
+});
+
+// Handle browser back/forward buttons
+window.addEventListener("popstate", function() {
+    const page = window.location.pathname.split("/").pop() || "html/home.html";
+    loadContent(page);
 });
