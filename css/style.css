@@ -236,3 +236,75 @@
 }
 
 /* END OF ABOUTB STYLE TEST1 * /
+
+
+
+
+/* Start Experience Section style */
+
+.experience-container { 
+    max-width: 100%; 
+    width: 100%; 
+    display: flex; 
+    gap: 20px; 
+    padding: 2px; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.experience-section {
+    width: 100%;
+    background-color: white; /* White background for experience section */ 
+    color: black; /* Text color for better contrast */ 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.company-logo {
+    float: left;
+    margin-right: 20px;
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    border-radius: 5px; /* Rounded corners */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.experience h3, .experience p {
+    margin: 0; /* Remove margins */
+    text-align: justify; /* Justify the text */
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.description-line {
+    margin-top: 20px;
+    margin-left: 70px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description-full {
+    display: none;   
+}
+
+.see-more {
+    color: black; /* Default color */
+    cursor: pointer;
+}
+
+.see-more:hover {
+    color: blue; /* Color on hover */
+}
+/* End Experience Section style */   
+
+
+
