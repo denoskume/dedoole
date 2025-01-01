@@ -552,7 +552,6 @@ hr {
 
 .privacy {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     color: #fff; 
     background-color: #000; 
     padding: 20px;
@@ -562,8 +561,8 @@ hr {
 }
 
 .privacy h2 {
-    color: #77aaff; /* Lighter color for headings */
-    border-bottom: 2px solid #77aaff; /* Matching border color for headings */
+    color: #77aaff; 
+    border-bottom: 2px solid #77aaff; 
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
@@ -585,7 +584,5 @@ hr {
 .privacy a:hover {
     text-decoration: underline;
 }
-.tcs {
- background-color: #000; 
-}
+
 /*End Privacy Style * /
