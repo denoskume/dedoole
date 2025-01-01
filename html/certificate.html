@@ -1,11 +1,12 @@
+<!-- Certificate Section -->
 <div class="certificate certificate-grid">
     <div class="year-group">
         <h2>2022</h2>
         <div class="certificate-info">
-            <p>Certificate Title - Issued Organization</p>
-            <p>Obtained Year: 2022</p>
-            <img src="images/ada.pdf" class="verification-link" alt="Certificate 2022">
-            <img src="verification-link-2022" class="verification-link" alt="Verification Link 2022">
+            <p>Google Data Analyst Certificate</p>
+            <p>Issued by: Google</p>
+            <img src="images/ada.pdf" class="verification-link" alt="Certificate 2022" onclick="viewFullCertificate('images/ada.pdf')">
+            <button onclick="viewFullCertificate('images/ada.pdf')">View Full Certificate</button>
         </div>
     </div>
 
@@ -14,8 +15,8 @@
         <div class="certificate-info">
             <p>Certificate Title - Issued Organization</p>
             <p>Obtained Year: 2023</p>
-            <img src="images/ada.png" class="verification-link" alt="Certificate 2023">
-            <img src="verification-link-2023" class="verification-link" alt="Verification Link 2023">
+            <img src="images/ada1.pdf" class="verification-link" alt="Certificate 2023" onclick="viewFullCertificate('images/ada1.pdf')">
+            <button onclick="viewFullCertificate('images/ada1.pdf')">View Full Certificate</button>
         </div>
     </div>
 
@@ -24,8 +25,29 @@
         <div class="certificate-info">
             <p>Certificate Title - Issued Organization</p>
             <p>Obtained Year: 2024</p>
-            <img src="images/ada2.pdf" class="verification-link" alt="Certificate 2024">
-            <img src="verification-link-2024" class="verification-link" alt="Verification Link 2024">
+            <img src="images/ada2.pdf" class="verification-link" alt="Certificate 2024" onclick="viewFullCertificate('images/ada2.pdf')">
+            <button onclick="viewFullCertificate('images/ada2.pdf')">View Full Certificate</button>
         </div>
     </div>
 </div>
+
+<!-- Popup Modal -->
+<div id="certificateModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="fullCertificate">
+</div>
+
+<!-- JavaScript to handle popup -->
+<script>
+function viewFullCertificate(url) {
+    var modal = document.getElementById('certificateModal');
+    var img = document.getElementById('fullCertificate');
+    img.src = url;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById('certificateModal');
+    modal.style.display = "none";
+}
+</script>
