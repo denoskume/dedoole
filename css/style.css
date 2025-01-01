@@ -413,7 +413,7 @@ hr {
 /* Start Form Style */
         
         .form-container {
-            width:50%;
+            width:70%;
             margin-left: 350px;
             border-radius: 30px;
             padding: 20px;
@@ -431,7 +431,7 @@ hr {
         .btn-clear {
             background-color: #dc3545;
             border-color: #dc3545;
-            color: white;
+            color: red;
         }
         .btn-clear:hover {
             background-color: #c82333;
@@ -440,7 +440,7 @@ hr {
         .btn-send {
             background-color: #28a745;
             border-color: #28a745;
-            color: white;
+            color: green;
         }
         .btn-send:hover {
             background-color: #218838;
