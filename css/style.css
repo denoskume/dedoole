@@ -585,5 +585,7 @@ hr {
 .privacy a:hover {
     text-decoration: underline;
 }
-
+.tcs {
+ background-color: #000; 
+}
 /*End Privacy Style * /
