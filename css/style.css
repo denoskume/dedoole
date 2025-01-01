@@ -483,25 +483,28 @@ hr {
 
 
 /* Start Certificate Style */
-    .certificate {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-    }
-    .certificate h1 {
-        text-align: center;
-    }
-    .certificate .year-group {
-        margin-bottom: 40px;
-    }
-    .certificate .certificate-info {
-        text-align: center;
-        margin-top: 10px;
-    }
-    .certificate .verification-link {
-        display: block;
-        text-align: center;
-        margin-top: 5px;
-    }
+.certificate {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.certificate h1 {
+    text-align: center;
+}
+.certificate .year-group {
+    margin-bottom: 40px;
+}
+.certificate .certificate-info {
+    text-align: center;
+    margin-top: 10px;
+}
+.certificate .verification-link {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 /* End Certificate Style */
-
-
