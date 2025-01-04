@@ -77,3 +77,9 @@ function downloadCertificate(image) {
     link.click();
     document.body.removeChild(link);
 }
+
+function checkCredential(certificateId) {
+    // Add your logic to check the credential
+    alert('Checking credential for ' + certificateId);
+}
+
