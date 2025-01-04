@@ -1,9 +1,4 @@
- body {     /*
-            display: flex;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: lightgrey;
-             */
+ body {     
   display: flex; 
   flex-direction: column; 
   margin: 0; 
@@ -159,7 +154,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     width: calc(100% - 350px);
-    margin-left: 340px;
+    margin-left: 350px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
