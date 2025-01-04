@@ -153,9 +153,9 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    width: calc(100% - 378px);
+    width: calc(100% - 370px);
     margin-left: 360px;
-    margin-right: 18px;
+    margin-right: 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
