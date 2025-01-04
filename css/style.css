@@ -485,7 +485,7 @@ hr {
 /* Start Certificate Style */
 .certificate-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3x3 grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 3x3 grid layout */
     gap: 20px;
 }
 
