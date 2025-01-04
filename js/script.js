@@ -68,3 +68,12 @@ document.getElementById('content').addEventListener('click', function(event) {
                 seeMore.innerHTML = "...see more";
             }
         }
+// Certificates 
+function downloadCertificate(image) {
+    const link = document.createElement('a');
+    link.href = image;
+    link.download = image;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
