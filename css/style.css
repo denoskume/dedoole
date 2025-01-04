@@ -1,8 +1,15 @@
- body {
+ body {     /*
             display: flex;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: lightgrey;
+             */
+  display: flex; 
+  flex-direction: column; 
+  margin: 0; 
+  font-family: Arial, sans-serif;
+  background-color: lightgrey; 
+  min-height: 100vh;
         }
         header {
             position: fixed;
