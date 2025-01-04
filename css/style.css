@@ -413,8 +413,8 @@ hr {
 /* Start Form Style */
         
         .form-container {
-            width:100%;
-            margin-left: 350px;
+            width:60%;
+            /*margin-left: 350px;*/
             border-radius: 30px;
             padding: 15px;
             background-color: white;
