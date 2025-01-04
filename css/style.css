@@ -485,7 +485,7 @@ hr {
 /* Start Certificate Style */
 .certificate-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3x3 grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
     gap: 20px;
 }
 
@@ -531,13 +531,14 @@ hr {
     cursor: pointer;
 }
 
-.certificate button img {
+.certificate button i {
     vertical-align: middle;
 }
 
 .certificate button:hover {
     background-color: #0056b3;
 }
+
 
 /* End Certificate Style */
 
