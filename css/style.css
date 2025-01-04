@@ -485,7 +485,7 @@ hr {
 /* Start Certificate Style */
 .certificate-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3x3 grid layout */
     gap: 20px;
 }
 
@@ -515,6 +515,13 @@ hr {
     color: #555;
 }
 
+.date-credential-download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .certificate button {
     background-color: #007bff;
     color: #fff;
@@ -522,6 +529,10 @@ hr {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.certificate button img {
+    vertical-align: middle;
 }
 
 .certificate button:hover {
