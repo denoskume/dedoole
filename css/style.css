@@ -153,8 +153,8 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    width: calc(100% - 350px);
-    margin-left: 350px;
+    width: calc(100% - 360px);
+    margin-left: 360px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
