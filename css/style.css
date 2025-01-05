@@ -192,10 +192,13 @@ footer {
 
 .footer-bottom {
     margin-top: 20px;
-    font-size: 14px;
-    color: white;
-    
+    font-size: 14px;    
 }
+
+.footer-bottom p {
+ color: white;
+}
+
 /* End Footer style */
 
         .social-icons a {
