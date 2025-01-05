@@ -482,7 +482,7 @@ hr {
             font-weight: bold;
         }
         .btn-clear {
-            color: red;
+            background-color: red;
         }
         .btn-clear:hover {
             background-color: #c82333;
