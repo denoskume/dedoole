@@ -481,20 +481,6 @@ hr {
         .form-group label {
             font-weight: bold;
         }
-        .btn-clear {
-            background-color: red;
-        }
-        .btn-clear:hover {
-            background-color: #c82333;
-            border-color: #bd2130;
-        }
-        .btn-send {
-            color: green;
-        }
-        .btn-send:hover {
-            background-color: #218838;
-            border-color: #1e7e34;
-        }
        
 
 @keyframes scroll {
