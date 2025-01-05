@@ -194,11 +194,6 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     color: #ccc;
- 
-    background-color: black;
-    width: calc(100% - 370px);
-    margin-left: 360px;
-    margin-right: 10px;
 }
 /* End Footer style */
 
