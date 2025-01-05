@@ -292,10 +292,7 @@ footer {
     margin-right: 10px; /* Added margin between spans */
 }
 
-/* END OF ABOUTB STYLE TEST1 * /
-
-
-
+/* END OF ABOUTB STYLE  * /
 
 /* Start Experience Section style */
 
@@ -470,8 +467,8 @@ hr {
 /* Start Form Style */
         
         .form-container {
-            width:60%;
-            /*margin-left: 350px;*/
+            width:80%;
+            margin-left: 350px;
             border-radius: 30px;
             padding: 15px;
             background-color: white;
